@@ -127,11 +127,40 @@ button {
 .games{
     margin-top: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center;
 
 }
+.instant-img{
+    display: block;
 
+}
+.instant{
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.instant-left{
+    margin-right: 100px;
+    text-align: center;
+
+}
+.instant-header{
+    text-align: center;
+}
+.first{
+    width: 500px;
+}
+ .second{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    bottom: 150px;
+    right:100px;
+}
 
 /* responsive code */
 @media screen and (max-width:576px) {
@@ -139,21 +168,31 @@ button {
         padding-left: 50px;
         padding-right: 50px;
     }
-    .online-game{
+    .online-game,.instant{
         margin-left: 40px;
         margin-right: 40px;
     }
     .nav,
-    .nav-option,.games
+    .nav-option,.games,.instant
     {
        flex-direction: column;
     }
+    .first{
+        width: 300px;
+    }
     .games img{
-        width: 100%;
         margin-top: 50px;
     }
     .nav-option>p,.follow{
         margin-top: 20px;
+    }
+    .instant-img{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .instant-header{
+        text-align: center;
+        margin-bottom: 30px;
     }
     .banner{
         margin-left: 50px;
@@ -175,17 +214,27 @@ button {
         padding-left: 50px;
         padding-right: 50px;
     }
-    .online-game{
+    .online-game,.instant{
         margin-left: 50px;
         margin-right: 50px;
     }
     .nav,
-    .nav-option,.games{
+    .nav-option,.games,.instant{
        flex-direction: column;
+    }
+    .instant-header{
+        text-align: center;
+        margin-bottom: 30px;
     }
     .games img{
         margin-top: 50px;
-        width: 100%;
+    }
+    .instant-img{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .second{
+        right: 200px;
     }
     .nav-option>p,.follow{
         margin-top: 20px;
