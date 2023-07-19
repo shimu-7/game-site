@@ -50,15 +50,59 @@ button {
 .follow {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
-    padding: 5px;
+    padding: 10px;
+    border: none;
 }
 
 .follow a {
     padding-left: 5px;
 }
-
-
-
+.banner{
+    margin: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-left{
+    background-color: rgba(241, 68, 174, 0.03);
+}
+.banner>img{
+    width: 50%;
+}
+.banner p{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #534C64;
+}
+.banner p>i{
+    margin-right: 10px;
+}
+.play{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.goat{
+    color: #8758F1 ;
+    font-size: 5.9rem;
+    font-weight: 700px;
+}
+.sign,.go{
+    margin-top: 50px;
+    border-radius: 3rem;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.sign{
+    background-color: #FF42A5;
+    margin-right: 20px;
+}
+.go{
+    background-color: #4EC5F7;
+}
 /* responsive code */
 @media screen and (max-width:576px) {
     .nav{
@@ -66,11 +110,21 @@ button {
         padding-right: 50px;
     }
     .nav,
-    .nav-option{
+    .nav-option
+    {
        flex-direction: column;
     }
     .nav-option>p,.follow{
         margin-top: 20px;
+    }
+    .banner{
+        margin-left: 50px;
+        margin-right: 50px;
+        flex-direction: column-reverse;
+    }
+    .banner>img{
+        width: 100%;
+        margin-bottom: 100px;
     }
 }
 
@@ -86,5 +140,14 @@ button {
     }
     .nav-option>p,.follow{
         margin-top: 20px;
+    }
+    .banner{
+        margin-left: 50px;
+        margin-right: 50px;
+        flex-direction: column-reverse;
+    }
+    .banner>img{
+        width: 75%%;
+        margin-bottom: 100px;
     }
 }
