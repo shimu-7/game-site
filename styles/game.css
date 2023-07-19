@@ -56,3 +56,35 @@ button {
 .follow a {
     padding-left: 5px;
 }
+
+
+
+/* responsive code */
+@media screen and (max-width:576px) {
+    .nav{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .nav,
+    .nav-option{
+       flex-direction: column;
+    }
+    .nav-option>p,.follow{
+        margin-top: 20px;
+    }
+}
+
+/* for tablet */
+@media screen and (max-width:992px) and (min-width:577px) {
+    .nav{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .nav,
+    .nav-option{
+       flex-direction: column;
+    }
+    .nav-option>p,.follow{
+        margin-top: 20px;
+    }
+}
