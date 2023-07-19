@@ -199,6 +199,31 @@ button {
     justify-content: space-between;
     align-items: center;
 }
+
+footer{
+    background: #0B0223;
+    display: block;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.ours,.icon,.terms,.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ours,.terms,footer>p{
+    padding-top: 20px;
+}
+.ours>p,.terms>p,footer>p{
+    color: gray;
+    padding-right: 50px;
+}
+.icon>i{
+    background-color: white;
+}
 /* responsive code */
 @media screen and (max-width:576px) {
     .nav{
@@ -256,6 +281,17 @@ button {
     .up,.down{
         flex-direction: column;
     }
+    
+    .ours{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .terms{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 /* for tablet */
@@ -300,5 +336,21 @@ button {
     .banner>img{
         width: 75%;
         margin-bottom: 100px;
+    }
+    .footer{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .ours{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2px;
+    }
+    .terms{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2px;
     }
 }
