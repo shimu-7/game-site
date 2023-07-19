@@ -137,7 +137,7 @@ button {
     margin-top: 50px;
     margin-left: 300px;
     margin-right: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,6 +162,43 @@ button {
     right:100px;
 }
 
+.up-game{
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgba(241, 68, 174, 0.03);
+}
+.up{
+    
+    padding-left: 100px;
+    padding-right: 100px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.up>div,.down>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 5px;
+}
+.up>div:hover,.down>div:hover{
+    border: 1px solid #FF42A5;
+}
+.up-game img{
+    margin-left: 10px;
+}
+.down{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* responsive code */
 @media screen and (max-width:576px) {
     .nav{
@@ -204,7 +241,20 @@ button {
         margin-bottom: 100px;
     }
     .online-game h3{
-        font-size: 2rem;
+       
+     font-size: 2rem;
+    }
+    /* .up-game{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .up,.down{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    } */
+    .up,.down{
+        flex-direction: column;
     }
 }
 
@@ -221,6 +271,9 @@ button {
     .nav,
     .nav-option,.games,.instant{
        flex-direction: column;
+    }
+    .up,.down{
+        flex-direction: column;
     }
     .instant-header{
         text-align: center;
