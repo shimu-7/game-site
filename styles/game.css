@@ -103,16 +103,54 @@ button {
 .go{
     background-color: #4EC5F7;
 }
+.games p,.online-game p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.online-game{
+    margin: 100px 200px;
+    text-align: center;
+}
+.online-game h3
+{
+    font-size: 3rem;
+    font-weight: 700;
+} 
+.games img{
+    /* width: 200px;
+    height: 400px; */
+    width: 250px;
+    border-radius: 16px;
+    margin-left: 10px;
+}
+.games{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
 /* responsive code */
 @media screen and (max-width:576px) {
     .nav{
         padding-left: 50px;
         padding-right: 50px;
     }
+    .online-game{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
     .nav,
-    .nav-option
+    .nav-option,.games
     {
        flex-direction: column;
+    }
+    .games img{
+        width: 100%;
+        margin-top: 50px;
     }
     .nav-option>p,.follow{
         margin-top: 20px;
@@ -126,6 +164,9 @@ button {
         width: 100%;
         margin-bottom: 100px;
     }
+    .online-game h3{
+        font-size: 2rem;
+    }
 }
 
 /* for tablet */
@@ -134,9 +175,17 @@ button {
         padding-left: 50px;
         padding-right: 50px;
     }
+    .online-game{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
     .nav,
-    .nav-option{
+    .nav-option,.games{
        flex-direction: column;
+    }
+    .games img{
+        margin-top: 50px;
+        width: 100%;
     }
     .nav-option>p,.follow{
         margin-top: 20px;
@@ -147,7 +196,7 @@ button {
         flex-direction: column-reverse;
     }
     .banner>img{
-        width: 75%%;
+        width: 75%;
         margin-bottom: 100px;
     }
 }
